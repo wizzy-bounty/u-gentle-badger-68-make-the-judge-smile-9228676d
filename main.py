@@ -7,6 +7,8 @@ Deterministic, standard library only, no network.
 
 import os
 
+MAX_ENTRY_CHARS = 200
+
 ENTRY = (
     "I blanked on question one of my finals, and the invigilator, deadpan, "
     "slid me a mint and whispered, 'Brains run on sugar. Begin again.' I passed."
@@ -14,7 +16,7 @@ ENTRY = (
 
 
 def main() -> None:
-    if not (1 <= len(ENTRY) <= 200) or not ENTRY.strip():
+    if not (1 <= len(ENTRY) <= MAX_ENTRY_CHARS) or not ENTRY.strip():
         raise ValueError("ENTRY must be 1-200 characters and not blank")
     ENTRY.encode("utf-8")
     out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")

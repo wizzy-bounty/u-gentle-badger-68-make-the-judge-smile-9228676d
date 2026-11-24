@@ -8,8 +8,8 @@ Deterministic, standard library only, no network.
 import os
 
 ENTRY = (
-    "The bus driver waited while an old man counted his coins twice, "
-    "then waved the fare away: 'pay me back with a good day.'"
+    "I blanked on question one of my finals, and the invigilator, deadpan, "
+    "slid me a mint and whispered, 'Brains run on sugar. Begin again.' I passed."
 )
 
 
